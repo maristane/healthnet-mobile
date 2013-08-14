@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+	  <meta charset="utf-8" />
+	  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+	   Remove this if you use the .htaccess -->
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	  <title>HealthNet Mobile</title>
+	
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	  <link rel="stylesheet" media="all" href="css/jquery.mobile-1.3.2.min.css" type="text/css">
+	  <link rel="stylesheet" media="all" href="css/style.css" type="text/css">
+	  <script src="js/jquery-1.10.2.min.js"></script>
+
+	  <script src="js/jquery.mobile-1.3.2.min.js"></script>
+	</head>
+<body>
+	<script src="js/app.js"></script>
+	<div class="container">
+		<!--Navegação-->
+				<div class="nav" data-role="header" data-position="fixed"> 
+					<a href="pacientes.html" class="botao ui-btn-left" data-role="button" data-icon="arrow-l" data-iconpos="notext" data-rel="back">Voltar</a>	
+					<h1>Teste 1 - José dos Santos Farias de Andrade Coutinho Ribeiro</h1>
+					<a href="#popupBasic" data-rel="popup" class="botao ui-btn-right" data-role="button" data-icon="gear" data-iconpos="notext">Opções</a>
+					<div data-role="popup" id="popupBasic">
+						<ul data-role="listview" data-inset="true">
+						   <li data-role="list-divider">Opções</li>
+						   <li data-icon="false"><a href="#">Estatísticas</a></li>
+						   <li data-icon="false"><a href="#">Questionários</a></li>
+						   <li data-icon="false"><a href="#">Conta</a></li>
+						   <li data-icon="false"><a href="index.html">Sair</a></li>
+						</ul>
+					</div>
+				</div> 
+		<!--Conteúdo-->
+		<div class="content">
+			<form class="questionario">
+
+				<ul data-role="listview" data-divider-theme="d">
+					<li class="titulo-secao" data-role="list-divider">Seção 1</li>
+					<li class="ui-body-e">
+						1 = Falso, 2 = Mais ou menos verdadeiro, 3 = Verdadeiro
+					</li>
+					<li>
+						<label for="q1">1 - Pergunta:</label>
+						<fieldset class="range">
+							<input type="range" name="q1" id="q1" value="2" min="1" max="3" />
+						</fieldset>
+					</li>
+					<li class="titulo-secao" data-role="list-divider">Observações</li>
+					<li>
+						<label for="comentarios">23 - Você tem algum outro comentário ou preocupações sobre você? Descreva-os:</label>
+						<textarea name="textarea" id="comentarios">
+						</textarea>
+					</li>
+					<li>
+						<label for="q24" class="ui-input-text">24 - Pensando no que acabou de responder, você acha que tem alguma dificuldade? Pode ser uma dificuldade emocional, de comportamento, pouca concentracão ou para se dar bem com outras pessoas.</label>
+						<fieldset data-role="controlgroup">
+			         		<input type="radio" name="q24" id="q24-1" value="q24-1" />
+			         		<label for="q24-1">Não</label>
+			         		<input type="radio" name="q24" id="q24-2" value="q24-2" />
+			         		<label for="q24-2">Sim, pequenas dificuldades</label>
+			         		<input type="radio" name="q24" id="q24-3" value="q24-3" />
+			         		<label for="q24-3">Sim, dificuldades bem definidas</label>
+			         		<input type="radio" name="q24" id="q24-4" value="q24-4" />
+			         		<label for="q24-4">Sim, dificuldades graves</label>
+			    		</fieldset>
+			    	</li>
+			    	<div class="botao"><input type="submit" value="Enviar resposta" data-theme="a" /></div>
+				</ul>
+			</form>
+		</div>
+	<div>
+</body>
+</html>
